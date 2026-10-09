@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Statewide PD</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ai.css">
+</head>
+<body>
+    <!-- Big panels (police menu, results, forms, MDT) -->
+    <div id="panelWrap" class="hidden">
+        <div class="panel" id="panel">
+            <header>
+                <div class="badge-mark"><img src="img/logo.png" alt="" style="height:36px;display:block"></div>
+                <div class="titles"><h1 id="pTitle">Statewide PD</h1><p id="pSub"></p></div>
+                <button class="x" id="pClose">✕</button>
+            </header>
+            <div class="body" id="pBody"></div>
+        </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div id="progress" class="hidden"><div class="plabel" id="progLabel"></div><div class="pbar"><i id="progFill"></i></div><div class="phint">X to cancel</div></div>
+
+    <!-- Civilian popups -->
+    <div id="civWrap" class="hidden"><div class="civ" id="civ"></div></div>
+
+    <!-- ID / badge card -->
+    <div id="card" class="hidden"></div>
+
+    <!-- Sentence HUD -->
+    <div id="sentence" class="hidden"></div>
+
+    <!-- Radar -->
+    <div id="radar" class="hidden">
+        <div class="rtitle">TRAFFIC RADAR <span id="rLock"></span></div>
+        <div class="rrow">
+            <div class="rbox"><span>FRONT</span><b id="rFront">--</b><em id="rFrontPlate">-</em></div>
+            <div class="rbox patrol"><span>PATROL</span><b id="rPatrol">--</b><em id="rUnit">MPH</em></div>
+            <div class="rbox"><span>REAR</span><b id="rRear">--</b><em id="rRearPlate">-</em></div>
+        </div>
+    </div>
+
+    <!-- AI patrol -->
+    <div id="aiHud" class="hidden"></div>
+    <div id="aiOffer" class="hidden"></div>
+    <div id="aiBackupBox" class="hidden"></div>
+    <div id="aiSubs" class="hidden"></div>
+    <div id="aiRadio" class="hidden"></div>
+    <div id="aiToasts"></div>
+    <div id="aiPanel" class="hidden"></div>
+    <div id="pc" class="hidden"></div>
+
+    <script src="app.js"></script>
+    <script src="ai.js"></script>
+</body>
+</html>
